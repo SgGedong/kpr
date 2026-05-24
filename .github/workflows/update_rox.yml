@@ -32,7 +32,7 @@ jobs:
           PYTHONUNBUFFERED: 1
         run: |
           echo "Starting Roxie playlist generation..."
-          python update_rox.py
+          python src/update_rox.py
           echo "script finished."
 
       - name: Commit & Push if Playlists Changed
